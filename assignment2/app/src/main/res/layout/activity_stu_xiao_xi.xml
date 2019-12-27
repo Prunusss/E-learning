@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".T_Class.StuXiaoXi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="658dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/barColor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="悄悄话"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/t_xx_back_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/sx_listview"
+            android:layout_width="match_parent"
+            android:layout_height="623dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

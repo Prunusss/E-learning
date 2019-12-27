@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aa"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:text="注册"
+        android:textSize="50dp"
+        android:textColor="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="27dp"
+        app:layout_constraintBottom_toTopOf="@id/sname_edit"
+        app:layout_constraintStart_toStartOf="@id/sname_edit"/>
+
+
+    <EditText
+        android:id="@+id/sname_edit"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="195dp"
+        android:background="#83FFFFFF"
+        android:radius="3dip"
+        android:hint="请输入姓名"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ssex"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入性别"
+        android:inputType="textPersonName"
+        android:radius="3dip"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/spassword_edit"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:radius="3dip"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sname_edit" />
+
+    <EditText
+        android:id="@+id/stel"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入手机号"
+        android:inputType="textPhonetic"
+        android:radius="3dip"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rg_group" />
+
+    <EditText
+        android:id="@+id/sno"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入学号"
+        android:inputType="textPhonetic"
+        android:radius="3dip"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stel" />
+
+    <EditText
+        android:id="@+id/sclass"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入班级"
+        android:inputType="textPersonName"
+        android:radius="3dip"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sno" />
+    <EditText
+        android:id="@+id/sschool"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入学校"
+        android:inputType="textPersonName"
+        android:radius="3dip"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sclass" />
+    <EditText
+        android:id="@+id/sdepartment"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="45dp"
+        android:background="#83FFFFFF"
+        android:ems="10"
+        android:hint="请输入部门"
+        android:inputType="textPersonName"
+        android:radius="3dip"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sschool" />
+
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="108dp"
+        android:background="#A8000000"
+        android:textColor="#FFFFFF"
+        android:text="注册完成"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sclass" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="108dp"
+        android:onClick="back_click"
+        android:background="#A8000000"
+        android:textColor="#FFFFFF"
+        android:text="返回登陆"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_button" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/teacher_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:text="老师" />
+
+        <RadioButton
+            android:id="@+id/student_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:text="学生" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

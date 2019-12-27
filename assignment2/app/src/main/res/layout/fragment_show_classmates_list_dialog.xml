@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/close_list"
+        android:layout_width="20dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cancle" />
+    <ListView
+        android:id="@+id/classmates_view"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
